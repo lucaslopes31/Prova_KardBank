@@ -27,6 +27,13 @@
 <link
 	href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
 	rel="stylesheet">
+<style>
+@media screen and (max-width: 767px) {
+	.form-group.w-50 {
+		width: 100% !important;
+	}
+}
+</style>
 <title>Sistema de Controle de Usuários</title>
 <link rel="icon" type="image/x-icon"
 	href="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-user-advertising-kiranshastry-solid-kiranshastry-4.png">
@@ -55,8 +62,13 @@
 				<div class="col-12 col-md-8 offset-md-1 mt-4 mt-md-0 pb-4">
 					<h1 class="text-center text-md-start">Listagem de Usuários</h1>
 					<hr class="w-50 mx-auto mx-md-0" />
+					<div class="form-group mb-3 w-50">
+						<label for="filtro">Filtro</label> <input type="text"
+							class="form-control" id="filtro" aria-describedby="filtroHelp"
+							placeholder="Filtre sua busca" onkeyup="filtro()">
+					</div>
 					<div class="table-responsive">
-						<table class="table text-center">
+						<table class="table text-center" id="dados">
 							<thead>
 								<tr>
 									<th scope="col">Id</th>
@@ -99,5 +111,29 @@
 			</div>
 		</div>
 	</main>
+	<script>
+		function filtro() {
+			var input, filter, table, tr, td, i, txtValue;
+			input = document.getElementById("filtro");
+			filter = input.value.toUpperCase();
+			table = document.getElementById("dados");
+			tr = table.getElementsByTagName("tr");
+			for (i = 0; i < tr.length; i++) {
+				td = tr[i].getElementsByTagName("td");
+				for (j = 0; j < td.length; j++) {
+					if (td[j]) {
+						txtValue = td[j].textContent || td[j].innerText;
+						if (txtValue.toUpperCase().indexOf(filter) > -1) {
+							tr[i].style.display = "";
+							break;
+						} else {
+							tr[i].style.display = "none";
+						}
+					}
+
+				}
+			}
+		}
+	</script>
 </body>
 </html>
