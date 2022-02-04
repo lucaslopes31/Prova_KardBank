@@ -37,6 +37,8 @@
 }
 </style>
 <title>Cadastro de Usuário</title>
+<link rel="icon" type="image/x-icon"
+	href="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-user-advertising-kiranshastry-solid-kiranshastry-4.png">
 </head>
 <body>
 	<header class="bg-dark text-white shadow mb-4 py-3">
@@ -49,12 +51,12 @@
 	if (sessao.getAttribute("hasMsg") != null) {
 		switch ((int) sessao.getAttribute("typeMsg")) {
 			case 0 :
-		out.print("<div class=\"alert alert-danger text-center\" style=\"margin-top: -1.5rem;\" role=\"alert\">" + sessao.getAttribute("msg")
-				+ "</div>");
+		out.print("<div class=\"alert alert-danger text-center\" style=\"margin-top: -1.5rem;\" role=\"alert\">"
+				+ sessao.getAttribute("msg") + "</div>");
 		break;
 			case 1 :
-		out.print("<div class=\"alert alert-success text-center\" style=\"margin-top: -1.5rem;\" role=\"alert\">" + sessao.getAttribute("msg")
-				+ "</div>");
+		out.print("<div class=\"alert alert-success text-center\" style=\"margin-top: -1.5rem;\" role=\"alert\">"
+				+ sessao.getAttribute("msg") + "</div>");
 		break;
 		}
 	}
