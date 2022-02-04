@@ -28,6 +28,7 @@
 	href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
 	rel="stylesheet">
 <title>Sistema de Controle de Usuários</title>
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-user-advertising-kiranshastry-solid-kiranshastry-4.png">
 </head>
 <body>
 	<header class="bg-dark text-white shadow mb-4 py-3">
