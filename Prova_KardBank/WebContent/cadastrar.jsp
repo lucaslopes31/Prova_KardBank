@@ -89,19 +89,19 @@
 						<div class="form-group mb-3 w-50">
 							<label for="inputNome">Nome</label> <input type="text"
 								class="form-control" id="inputNome" aria-describedby="nomeHelp"
-								placeholder="Preencha o nome" name="nome" required>
+								placeholder="Preencha o nome" name="nome" maxlength="50" required>
 						</div>
 						<div class="form-group mb-3 w-50">
 							<label for="inputTelefone">Telefone</label> <input type="text"
 								class="form-control" id="inputTelefone"
 								aria-describedby="telefoneHelp"
-								placeholder="Preencha o telefone" name="telefone" required>
+								placeholder="Preencha o telefone" name="telefone" maxlength="30" required>
 						</div>
 						<div class="form-group mb-3 w-50">
 							<label for="inputEmail">E-mail</label> <input type="email"
 								class="form-control" id="inputEmail"
 								aria-describedby="emailHelp" placeholder="Preencha o e-mail"
-								name="email" required>
+								name="email" maxlength="50" required>
 						</div>
 						<button type="submit" class="btn btn-primary">Cadastrar</button>
 					</form>

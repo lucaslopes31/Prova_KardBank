@@ -92,7 +92,7 @@
 							<input type="checkbox" class="form-check-input" id="check"
 								name="aceito" value="1" required> <label
 								class="form-check-label" for="check">Aceito que o
-								usuário será definitivamente excluído</label>
+								usuário será permanentemente excluído</label>
 						</div>
 						<button type="submit" class="btn btn-primary">Excluir</button>
 					</form>

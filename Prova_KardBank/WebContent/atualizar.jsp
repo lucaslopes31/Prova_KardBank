@@ -90,7 +90,7 @@
 						<div class="form-group mb-4 w-50">
 							<label for="inputId">Id do Usuário</label> <input type="text"
 								class="form-control" id="inputId" aria-describedby="idHelp"
-								placeholder="Preencha o Id" name="id" value="<%out.print(id);%>"
+								placeholder="Preencha o Id" name="id" maxlength="11" value="<%out.print(id);%>"
 								required>
 						</div>
 						<h5 class="text-center text-md-start">Novos dados do usuário</h5>
@@ -104,21 +104,21 @@
 						<div class="form-group mb-3 w-50">
 							<label for="inputNome">Nome</label> <input type="text"
 								class="form-control" id="inputNome" aria-describedby="nomeHelp"
-								placeholder="Preencha o nome" name="nome"
+								placeholder="Preencha o nome" name="nome" maxlength="50"
 								value="<%out.print(nome);%>">
 						</div>
 						<div class="form-group mb-3 w-50">
 							<label for="inputTelefone">Telefone</label> <input type="text"
 								class="form-control" id="inputTelefone"
 								aria-describedby="telefoneHelp"
-								placeholder="Preencha o telefone" name="telefone"
+								placeholder="Preencha o telefone" name="telefone" maxlength="30"
 								value="<%out.print(telefone);%>">
 						</div>
 						<div class="form-group mb-3 w-50">
 							<label for="inputEmail">E-mail</label> <input type="email"
 								class="form-control" id="inputEmail"
 								aria-describedby="emailHelp" placeholder="Preencha o e-mail"
-								name="email" value="<%out.print(email);%>">
+								name="email" maxlength="50" value="<%out.print(email);%>">
 						</div>
 						<button type="submit" class="btn btn-primary">Alterar</button>
 					</form>
